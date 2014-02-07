@@ -586,8 +586,10 @@ elseif has("gui_running") || &t_Co == 88
     CSAHi SpellCap term=reverse cterm=undercurl ctermbg=bg ctermfg=19 gui=undercurl guibg=bg guifg=fg guisp=#0000ff
     CSAHi airline_c_to_airline_x_red term=NONE cterm=NONE ctermbg=80 ctermfg=65 gui=NONE guibg=#242321 guifg=#ff2c4b
     CSAHi airline_a_to_airline_b_bold term=bold cterm=bold ctermbg=80 ctermfg=60 gui=bold guibg=#45413b guifg=#aeee00
-	CSAHi LineNr ctermfg=239 ctermbg=233
-	CSAHi SignColumn ctermbg=233
+
+    " manual color tweaks
+    highlight LineNr ctermfg=239 ctermbg=233
+    highlight SignColumn ctermbg=233
 endif
 
 if 1
